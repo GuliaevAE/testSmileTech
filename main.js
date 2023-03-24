@@ -11,7 +11,7 @@ let allTopicsContainer = document.getElementsByClassName('allTopics')[0]
 let allTopics = document.getElementsByClassName('allTopics_topic')
 let allAnswers = document.getElementsByClassName('topic-questions_answer_content')
 let allAnswerButton = document.getElementsByClassName('topic-questions_answer_button')
-
+let allAnswerTitles = document.getElementsByClassName('topic-questions_answer_title')
 
 //init
 //при отсутствии js файла все темы с их вопросами будут открыты
@@ -30,6 +30,14 @@ for (let button of allAnswerButton) {
         let answer_content = event.target.parentNode.getElementsByClassName('topic-questions_answer_content')[0]
         answer_content.classList.toggle('hidden')
         event.target.classList.toggle('active')
+    })
+}
+
+for (let title of allAnswerTitles) {
+    title.addEventListener('click', (event) => {
+        let answer_content = event.target.parentNode.getElementsByClassName('topic-questions_answer_content')[0]
+        answer_content.classList.toggle('hidden')
+        
     })
 }
 

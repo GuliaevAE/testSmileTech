@@ -116,7 +116,6 @@ body::-webkit-scrollbar {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    
     min-width: 200px;
     flex: 1;
     height: 152px;
@@ -235,18 +234,14 @@ li::marker {
 
 button {
     align-self: center;
-
     font-weight: 600;
     font-size: 23px;
     line-height: 28px;
-
     background: transparent;
     text-align: center;
     margin-top: 60px;
-
     width: 361px;
     height: 69px;
-
     border: 2px solid #3052D8;
     border-radius: 60px;
     color: #3052D8;
